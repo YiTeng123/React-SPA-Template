@@ -1,0 +1,20 @@
+@mixin setbg($image-path, $w, $h, $l, $t) {
+  @if $image-path {
+    background: url("@/assets/images/" + $image-path + '.png') no-repeat;
+    background-size: 100% 100%;
+  }
+  @if $w {
+    width: $w;
+  }
+  @if $h {
+    height: $h;
+  }
+  @if $l {
+    position: absolute;
+    left: $l;
+  }
+  @if $t {
+    position: absolute;
+    top: $t;
+  }
+}

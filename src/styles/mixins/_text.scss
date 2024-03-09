@@ -1,0 +1,5 @@
+@mixin text_truncation() {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
